@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/75e53ee709.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/Components.css" />
+    <link rel="stylesheet" href="/css/Profile.css" />
+    <title>Project Demos</title>
+  </head>
+  <body>
+    <!-- Navigation for screens larger then 1024px -->
+    <nav
+      id="Nav-with-Logo"
+      class="nav nav-dark-c nav_reverse-dir position-left text-lg"
+    >
+      <!-- Nav Logo -->
+      <div class="nav_logo nav_reverse-dir">
+        <img src="img/profile.JPG" alt="logo" />
+        <!-- with or without img -->
+        <a class="navbar-brand" href="#">J. Compton</a>
+      </div>
+      <!-- Nav Links -->
+      <ul class="nav_links text-lg center">
+        <li class="nav_link">
+          <i class="fas fa-home"></i><a href="/index.html">Home</a>
+        </li>
+        <li class="nav_link">
+          <i class="fas fa-eye"></i><a href="about.html">About</a>
+        </li>
+        <li class="nav_link">
+          <i class="fas fa-envelope"></i><a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation for screens smaller then 1024px -->
+    <nav id="Simple_Nav" class="nav position-top text-lg">
+      <!-- Nav Links -->
+      <ul class="nav_links">
+        <li class="nav_link"><a href="index.html">Home</a></li>
+        <!-- <li class="nav_link"><a href="#">Services</a></li> -->
+        <li class="nav_link"><a href="#">About</a></li>
+        <li class="nav_link"><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Header -->
+      <header id="Header">
+        <div class="card text card-text">
+          <div class="card-body center">
+            <h5 class="card-title text-xl tm-2_5">Joshua J. Compton</h5>
+            <p class="card-text text-md tp-1_5">
+              Web Development/Design
+            </p>
+            <img src="portfolio/img/header.jpg" class="card-img-top" alt="..." />
+            <a href="#Display-Contact">
+              <button
+                type="button"
+                class="btn btn-outline-success-c btn-md btn-block"
+              >
+                Contact Me
+              </button>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- Contact -->
+      <section id="Contact">
+        <div id="Display-Contact" class="contact_container">
+          <a href="#" class="closebtn">×</a>
+          <div class="card text card-text card-success-c" style="width: 300px;">
+            <div class="card-body">
+              <h6 class="card-header center text-xl">Contact Me</h6>
+
+              <p class="tm-1_5">
+                <i class="fa fa-map-marker"></i> Burlingame Ca,
+              </p>
+              <p class="tm-1_5">
+                <i class="fa fa-phone"></i> Phone: 619-797-5103
+              </p>
+              <p class="tm-1_5">
+                <i class="fa fa-envelope"> </i> Email: joshuacompton@my.smccd.edu
+              </p>
+              <button type="button" class="btn btn-dark-c btn-md btn-block">
+                Inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="About">
+        <h2 class="text-xl">My Name</h2>
+        <p class="text-md tm-0_5 opac">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+          consequuntur voluptatem neque modi quibusdam nesciunt nulla tempore
+          voluptate officia. Repellat, vel enim. Accusantium voluptate, atque
+          voluptatum expedita saepe, ab quae illum sunt provident eos iure non
+          perferendis consequatur beatae adipisci? Eaque culpa similique
+          assumenda at maiores temporibus quaerat ab fugiat?
+        </p>
+        <p class="text-md tm-0_5 opac">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+          consequuntur voluptatem neque modi quibusdam nesciunt nulla tempore
+          voluptate officia. Repellat, vel enim. Accusantium voluptate, atque
+          voluptatum expedita saepe, ab quae illum sunt provident eos iure non
+          perferendis consequatur beatae adipisci? Eaque culpa similique
+          assumenda at maiores temporibus quaerat ab fugiat?
+        </p>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="skills">
+        <h2 class="text-xl">Skills</h2>
+        <div class="skill Photography text-md">
+          <label for=""><i class="fas fa-camera"></i>Web Development</label>
+          <input
+            class="btn-outline-success-c"
+            type="text"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div class="skill Web text-md">
+          <label for=""><i class="fas fa-globe"></i>Web Design</label>
+          <input
+            class="btn-outline-prim-c"
+            type="text"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div class="skill Photoshop text-md">
+          <label for=""><i class="fas fa-pen-nib"></i>Project Optimization</label>
+          <input class="btn-outline-warning-c" type="text" disabled />
+        </div>
+      </section>
+      <!-- Statements -->
+      <section class="statements btn btn-outline-success-c">
+        <div class="statement">
+          <h5 class="text-xl">21+</h5>
+          <p class="text-md">Partners</p>
+        </div>
+        <div class="statement">
+          <h5 class="text-xl">121+</h5>
+          <p>Projects Done</p>
+        </div>
+        <div class="statement">
+          <h5 class="text-xl">All</h5>
+          <p>Happy Clients</p>
+        </div>
+        <div class="statement">
+          <h5 class="text-xl">215+</h5>
+          <p>Meetings</p>
+        </div>
+      </section>
+      <!-- Download btn -->
+      <a
+        href="https://volere.life/web-development/"
+        class="btn-Neon btn-Neon-Green btn-lg btn-block opac"
+      >
+        <span class="neon"></span>
+        <span class="neon"></span>
+        <span class="neon"></span>
+        <span class="neon"></span>
+        <i class="fas fa-download"></i>
+        Download Resume
+      </a>
+      <section id="Services">
+        <h2 class="text-xl">My services</h2>
+        <p class="text-md tm-0_5 opac">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+          consequuntur voluptatem neque modi quibusdam nesciunt nulla tempore
+          voluptate officia. Repellat, vel enim. Accusantium voluptate, atque
+          voluptatum expedita saepe, ab quae illum sunt provident eos iure non
+          perferendis consequatur beatae adipisci? Eaque culpa similique
+          assumenda at maiores temporibus quaerat ab fugiat?
+        </p>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div
+            class="card text card-text card-outline-success-c opac"
+            style="width: 350px;"
+          >
+            <div class="card-body center">
+              <h6 class="card-header text-lg">Basic</h6>
+
+              <p class="card-text tp-1">
+                Web Design
+              </p>
+              <!-- <p class="card-text tp-1">
+                Photography
+              </p> -->
+              <p class="card-text tp-1">
+                Hosting
+              </p>
+              <p class="card-text tp-1">
+                Support
+              </p>
+              <h4 class="card-price text-xl">$199.99</h4>
+              <h6 class="card-footer UP">
+                <button type="button" class="btn btn-success-c btn-md">
+                  Sign Up
+                </button>
+              </h6>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="card text card-text card-outline-success-c opac"
+            style="width: 350px;"
+          >
+            <div class="card-body center">
+              <h6 class="card-header text-lg">Pro</h6>
+
+              <p class="card-text tp-1">
+                Web Design
+              </p>
+              <!-- <p class="card-text tp-1">
+                Photography
+              </p> -->
+              <p class="card-text tp-1">
+                Hosting
+              </p>
+              <p class="card-text tp-1">
+                Support
+              </p>
+              <h4 class="card-price text-xl">$399.99</h4>
+              <h6 class="card-footer UP">
+                <button type="button" class="btn btn-success-c btn-md">
+                  Sign Up
+                </button>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Photos -->
+      <section id="Photos">
+        <h2 class="text-xl">My Photos</h2>
+        <div class="photo-container">
+          <div class="photo"></div>
+          <div class="photo"></div>
+          <div class="photo"></div>
+          <div class="photo"></div>
+          <div class="photo"></div>
+          <div class="photo"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="Footer">
+      <ul class="social">
+        <li><i class="fab fa-instagram tp-1 icon_default hover"></i></li>
+        <li><i class="fab fa-facebook tp-1 icon_default hover"></i></li>
+        <li><i class="fab fa-twitter tp-1 icon_default hover"></i></li>
+        <li><i class="fab fa-linkedin tp-1 icon_default hover"></i></li>
+      </ul>
+      <p class="text-md center tp-0_5">
+        Powerde by
+        <a href="https://volere.life/web-development/" target="_blank"
+          >Menyhart Media</a
+        >
+        &copy;2020
+      </p>
+    </footer>
+  </body>
+</html>
