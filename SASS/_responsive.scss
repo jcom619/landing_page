@@ -1,0 +1,140 @@
+@media (max-width: 1024px) {
+  #Nav-with-Logo-Button {
+    max-width: 1024px;
+    border-bottom: 1px solid #003580;
+    background-color: rgba(0, 53, 128, 0.1);
+    .nav_links {
+        position: absolute;
+        right: 10px;
+    }
+  }
+  
+  #Header {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 90vh;
+    margin-top: 10vh;
+    .profile-img img {
+        height: 25vh;
+        margin-top: auto;
+    }
+  } 
+}
+
+
+
+@media (max-width: 868px) {
+    #Services {
+        margin: 1rem;
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+            border: none;
+            &:nth-child(even) {
+                border-top: none;
+                border-left: 1px solid;
+            }
+            &:nth-child(odd) {
+                border: none;
+                border-left: 1px solid;
+            }
+        }
+    }
+    .packages {
+        display: block;
+    }
+    #Pricing .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #Pricing .pricing-container .card-basic {
+        position: relative;
+        display: none;
+    }
+    #Pricing .pricing-container .card-basic .pack-service {
+        display: none;
+    }
+    #Pricing .pricing-container .card-basic:target {
+        display: block;
+    }
+    #Pricing .pricing-container .card-standard {
+        position: relative;
+        display: none;
+    }
+    #Pricing .pricing-container .card-standard:target {
+        display: block;
+    }
+    #Pricing .pricing-container .card-premium {
+        position: relative;
+        display: none;
+    }
+    #Pricing .pricing-container .card-premium:target {
+        display: block;
+    }
+    .modal-dialog .modal-content {
+        width: 90%;
+    }
+}
+
+
+ /* minimize nav */
+@media (max-width: 765px) {
+  #Nav-with-Logo-Button {
+    border-bottom: 1px solid #003580;
+    box-shadow: 0 0 15px 15px rgba(0, 53, 128, 0.2);
+    height: 60px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(240, 240, 240, 100);
+  }
+  #Nav-with-Logo-Button .btn {
+    display: inline-flex;
+    background-color: rgba(200, 200, 200, 0.4);
+  }
+  #Nav-with-Logo-Button .nav_links {
+    transition: all 0.3s ease-in-out;
+  }
+  #Nav-with-Logo-Button .nav_links {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 95vh;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background-color: rgba(0, 53, 128, 0.8);
+    overflow: hidden;
+    z-index: 1000;
+    transition: all 0.5s ease;
+  }
+  #Nav-with-Logo-Button .nav_links a {
+    color: #fff;
+  }
+  #Nav-with-Logo-Button #menu:checked ~ .nav_links {
+    left: 0;
+  }
+  #About .about-container {
+    grid-template-columns: 1fr;
+  }
+  #Services .services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Pricing .packages {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #Pricing .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .modal-dialog .modal-content {
+    width: 100%;
+  }
+}

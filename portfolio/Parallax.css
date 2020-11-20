@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+.opac {
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
+  color: #02314b;
+  letter-spacing: 1.5px;
+  line-height: 1.8em;
+}
+
+p {
+  word-break: break-all;
+}
+
+.card {
+  border-radius: 0;
+}
+
+html, body {
+  width: 100% !important;
+}
+
+.img_container-1 {
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+}
+
+.parallax {
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+}
+
+.about-img {
+  background-image: url(img/about.jpg);
+}
+
+.grid-img-1 {
+  background-image: url(/dist/Portfolio/Parallax//img/Services/service-1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+.grid-img-2 {
+  background-image: url(/dist/Portfolio/Parallax//img/Services/service-2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+.grid-img-3 {
+  background-image: url(img/Services/service-3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+#Footer {
+  background-image: url(/dist/Portfolio/Parallax//img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+}
+
+.section {
+  text-align: center;
+  padding: 55px 85px;
+}
+
+.section-light {
+  background-color: #f8f9f7;
+  color: #0a000e;
+}
+
+.section-dark {
+  background-color: #0a000e;
+  color: #f8f9f7;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#Nav-with-Logo-Button {
+  z-index: 3;
+  height: 60px;
+  background-color: rgba(10, 0, 14, 0.1);
+  color: #f8f9f7;
+}
+
+#Nav-with-Logo-Button .nav_logo {
+  background-color: #cc3b3b;
+  height: 100%;
+  padding: 0.5rem 1rem;
+}
+
+#Nav-with-Logo-Button ul {
+  height: 100%;
+}
+
+#Nav-with-Logo-Button .nav_link a {
+  padding: 1rem;
+  height: 100%;
+  text-shadow: 1px 1px 5px #0a000e;
+  color: #f8f9f7;
+  font-weight: bold;
+}
+
+#Nav-with-Logo-Button .nav_link a:hover {
+  background-color: #0a000e;
+  color: #f8f9f7;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.6);
+          box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.6);
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#Nav-with-Logo-Button .nav-order .nav_logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#Nav-with-Logo-Button .nav-order .nav_links {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#Nav-with-Logo-Button .nav-order .account-container {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.text-over {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #f8f9f7;
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 5px #f8f9f7;
+  -webkit-animation: title 3s ease;
+          animation: title 3s ease;
+}
+
+@-webkit-keyframes title {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes title {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+.title {
+  background-color: #02314b;
+  padding: 33px;
+  font-size: 3rem;
+  border-top-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+  -webkit-animation: border 5s ease 3s;
+          animation: border 5s ease 3s;
+}
+
+@-webkit-keyframes border {
+  from {
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+  to {
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+}
+
+@keyframes border {
+  from {
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+  to {
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-container p {
+  max-width: 400px;
+}
+
+#Contact .contact-container {
+  max-width: 700px;
+  margin: 3rem auto;
+}
+
+#Contact .card .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2;
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+#Contact .card .info .form-grid.col-2 {
+  gap: 1rem;
+}
+
+#Footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f8f9f7;
+}
+
+#Footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+#Footer .social i {
+  font-size: 2.5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#Footer .social i:hover {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffbb33;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#Footer p {
+  letter-spacing: 1.5px;
+}
+
+#Footer p a {
+  color: #ffbb33;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #Nav-with-Logo-Button {
+    max-width: 768px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 50px 1rem;
+  }
+  #Nav-with-Logo-Button {
+    position: relative;
+    background-color: #02314b;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100px;
+    font-size: 1rem;
+  }
+  #Nav-with-Logo-Button .nav_logo {
+    margin: 0;
+  }
+  #Nav-with-Logo-Button .nav_links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+  #Nav-with-Logo-Button .nav_links .nav_link,
+  #Nav-with-Logo-Button .nav_links a {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(10, 0, 14, 0.1);
+    color: #f8f9f7;
+  }
+  #Nav-with-Logo-Button .account-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-order .nav_logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .nav-order .nav_links {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .nav-order .account-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .grid-parallax {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .grid-img-1,
+  .grid-img-2,
+  .grid-img-3 {
+    background-attachment: fixed;
+  }
+  #Contact .contact-container {
+    margin: 1rem auto;
+  }
+  #Contact .card .card-body {
+    padding: 1rem;
+  }
+  #Contact .card .info {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #Contact .card .info .form-grid.col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Footer .social i {
+    font-size: 1.5rem;
+  }
+}
